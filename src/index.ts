@@ -1,16 +1,15 @@
 class Animals {
-  private name: string;
-
+  private nameOfTheAnimal: string;
   constructor(name: string) {
-    this.name = name;
+    this.nameOfTheAnimal = name;
   }
 
-  public getName() {
-    return this.name;
+  public getName(): string {
+    return this.nameOfTheAnimal;
   }
 
-  public setName(name: string) {
-    this.name = name;
+  public setName(name: string): void {
+    this.nameOfTheAnimal = name;
   }
 }
 
@@ -20,6 +19,6 @@ class Dog extends Animals {
   }
 }
 
-const nameOfTheAnimal = new Dog().getName();
+const dog = new Dog();
 
-console.log("The name of the animal is: " + nameOfTheAnimal);
+console.log("The name of the animal is " + dog.getName());
