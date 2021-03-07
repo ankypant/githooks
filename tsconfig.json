@@ -2,8 +2,9 @@
   "compilerOptions": {
     "rootDirs": ["./src/index.ts"],
     "outDir": "./dist",
-    "target": "esnext",
+    "target": "es5",
     "moduleResolution": "node",
+    "module": "commonjs",
     "sourceMap": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"]

@@ -9,7 +9,7 @@
     "check-commit": "node ./dist/index.js"
   },
   "pre-commit": {
-    "silent": true,
+    "silent": false,
     "run": [
       "check-commit"
     ]
