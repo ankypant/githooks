@@ -1,0 +1,33 @@
+{
+  "name": "githooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --clear --ignore-watch node_modules ./src/index.ts",
+    "build": "tsc",
+    "check-commit": "node ./dist/index.js"
+  },
+  "pre-commit": {
+    "silent": true,
+    "run": [
+      "check-commit"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankypant/githooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankypant/githooks/issues"
+  },
+  "homepage": "https://github.com/ankypant/githooks#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  }
+}
