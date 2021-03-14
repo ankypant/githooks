@@ -21,4 +21,4 @@ class Dog extends Animals {
 
 const dog = new Dog();
 
-console.log("The name of the animal is " + dog.getName());
+console.log("The name of the animal is:" + dog.getName());
