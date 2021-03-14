@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: secret_check
+        name: secret_check
+        entry: pre-commit.sh
+        language: script
+        types: [javascript]
+        pass_filenames: false
