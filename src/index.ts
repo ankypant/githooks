@@ -1,18 +1,17 @@
 class Animals {
-  private nameOfTheAnimal: string;
   private secret = "COMPANY_SECRET";
-  private secret2 = "COMPANY_SECRET";
-  constructor(name: string) {
-    this.nameOfTheAnimal = name;
+
+  constructor(private name: string) {
+    this.name = name;
     this.secret = null;
   }
 
   public getName(): string {
-    return this.nameOfTheAnimal;
+    return this.name;
   }
 
   public setName(name: string): void {
-    this.nameOfTheAnimal = name;
+    this.name = name;
   }
 }
 
