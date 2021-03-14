@@ -1,7 +1,9 @@
 class Animals {
   private nameOfTheAnimal: string;
+  private secret = "COMPANY_SECRET";
   constructor(name: string) {
     this.nameOfTheAnimal = name;
+    this.secret = null;
   }
 
   public getName(): string {
